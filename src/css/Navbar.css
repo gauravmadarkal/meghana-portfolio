@@ -43,10 +43,14 @@
     text-decoration: none !important;
 }
 
-.nav-link-item{
+.nav-link-items{
     text-decoration: none !important;
     border-bottom:#424242 !important;
     border-bottom-width: 0.5px;
+}
+a.nav-link-items{
+  color: black !important;
+  font-family:'Quicksand', sans-serif;
 }
 
 .fade-in {

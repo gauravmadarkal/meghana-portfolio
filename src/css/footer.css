@@ -1,0 +1,11 @@
+.main-footer{
+    clear: both;
+    position: relative;
+    height: auto;
+    margin-top: -100px;
+    margin: 10px 10px 0px 10px;
+}
+.copyright-text{
+    font-size: 10px;
+    font-family: 'Quicksand', sans-serif !important;
+}

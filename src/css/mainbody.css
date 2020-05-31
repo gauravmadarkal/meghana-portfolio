@@ -1,0 +1,72 @@
+:root{
+    --main-bg-color : #fafafa;
+    --main-element-color : black;
+    --main-theme-color : #00695C;
+}
+.hero-image{
+    width: 50%;
+    vertical-align: middle;
+}
+h1.cover-heading.greetings{
+    margin-top: 90px;
+    top: 0;
+    left: 0;
+    font-size: 60px;
+}
+h1.name{
+    color: var(--main-theme-color);
+    font-size:5vw;
+}
+p.self-description{
+    width: 100%;
+    font-size: 20px;
+    color: var(--main-element-color);
+    font-weight: 400;
+  }
+.cover{
+    text-align: left;
+    padding: 10px 20px 0px 20px;
+}
+.rows::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.columns {
+    float: left;
+    width: 45%;
+    padding: 5px;
+    margin-left: 20px;
+}
+@media screen and (max-width: 600px) {
+    .hero-image{
+        width: 90%;
+        vertical-align: middle;
+    }
+    .cover{
+        padding: 10px 10px 10px 10px;
+    }
+    h1.cover-heading.greetings
+    {
+        margin-top: 50px;
+        font-size: 35px;
+    }
+    h1.name{
+        font-size: 35px;
+    }
+    .columns {
+        width: 90%;
+    }
+    p.self-description{
+        width: 100%;
+        font-size: 15px;
+      }
+}
+a.learnmore-button{
+    color: var(--main-bg-color) !important;
+}
+a.learnmore-button:hover{
+    background-color:var(--main-theme-color);
+    border-color: var(--main-theme-color);
+}
+

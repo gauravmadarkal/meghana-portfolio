@@ -1,17 +1,18 @@
 :root{
     --main-bg-color : #fafafa;
     --main-element-color : black;
-    --main-theme-color : #880e4f;
+    --main-theme-color : #00695C;
+    --main-header-color :#CFD8DC;
 }
 .main-header{
-    background-color: #E0F2F1;
+    background-color: var(--main-header-color);
     border-radius: 30px;
     margin: 10px 50px 10px 50px;
 }
 
 .masthead-brand{
-    font-weight: 500px;
     font-size: 30px;
+    font-family: "Quicksand", sans-serif;
     /* margin-left: 50px; */
     padding: 17px 10px 10px 20px;
     height: auto;
@@ -31,8 +32,16 @@
     float: right;
 }
 .brandLogo{
+    font-weight: 900 !important;
     text-decoration: none !important;
     color: var(--main-element-color);
+}
+a,
+a:focus{
+    color: var(--main-element-color) !important;
+}
+a:hover {
+  color: var(--main-theme-color) !important;
 }
 .inner{
     width: 100%;
@@ -40,7 +49,7 @@
     margin: auto;
 }
 .nav-masthead{
-    padding: 25px 10px 10px 20px;
+    padding: 19px 10px 10px 20px;
     height: auto;
     margin: 0 25px 0 auto;
     position: relative;
@@ -48,6 +57,16 @@
 .nav-link{
     font-weight: 500;
     color: var(--main-element-color) !important;
+}
+
+a.nav-bar-items{
+    font-size: 17px;
+    font-weight: 500;
+    font-family: 'Quicksand', sans-serif !important;
+    transition: transform .2s;
+  }
+a.nav-bar-items:hover{
+    transform: scale(1.15); 
 }
 .nav-masthead .burger{
     display: none;
@@ -103,4 +122,8 @@
     a.nav-bar-items{
         display: none;
       }  
+}
+.hero-image{
+    width: 80%;
+    vertical-align: middle;
 }
