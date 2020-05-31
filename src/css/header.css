@@ -16,10 +16,10 @@ body{
 }
 
 .masthead-brand{
-    font-size: 30px;
-    font-family: "Quicksand", sans-serif;
+    font-size: 50px;
+    font-family:'Lobster', cursive;
     /* margin-left: 50px; */
-    padding: 17px 10px 10px 20px;
+    padding: 8px 10px 10px 20px;
     height: auto;
     margin: 0 auto;
     position: relative;
@@ -37,7 +37,7 @@ body{
     float: right;
 }
 .brandLogo{
-    font-weight: 900 !important;
+    font-weight: 500 !important;
     text-decoration: none !important;
     color: var(--main-element-color);
 }
@@ -87,7 +87,7 @@ a.nav-bar-items:hover{
     right: 0em;
     }
     .masthead-brand{
-        padding-top: 19px !important;
+        padding-top: 8px !important;
     }
     .nav-masthead{
         padding: 25px 100px 10px 20px;

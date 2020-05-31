@@ -101,5 +101,32 @@ a.learnmore-button:hover{
       border-color: var(--main-theme-color);
       color: var(--main-bg-color) !important;
 }
-
+.background-contact{
+    /* background-color: #ede7f6 !important; */
+    border-radius: 20px;
+    padding: 10px 20px 10px 5px !important;
+}
+@media screen and (max-width: 600px) {
+    .background-contact .column{
+      margin-top: 20px;
+    }
+  }
+  .formInput{
+    padding-top: 20px 20px 0px 10px !important;
+  }
+  .MuiFormControl-fullWidth {
+    margin-top: 10px;
+    padding: 10px 20px 10px 10px;
+  }
+.align-center{
+    text-align: left;
+    font-family: 'Quicksand', sans-serif;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+@media screen and (max-width: 600px) {
+    .align-center{
+      font-size: 20px;
+    }
+}
 

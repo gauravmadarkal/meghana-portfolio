@@ -18,6 +18,7 @@ import ResponsiveNav from './component/ResponsiveNav';
 import Home from './component/Home';
 import About from './component/About';
 import Projects from './component/Projects';
+import Contact from './component/Contact';
 
 class App extends React.Component{
   constructor(){
@@ -25,15 +26,15 @@ class App extends React.Component{
     this.onClick = this.changeActiveElement.bind(this);
   }
   changeActiveElement(event){
-    const {id} = event.target;
-    var ids = ["nav-about","nav-projects","nav-contact","nav-home","nav-uses"];
-    ids.forEach(function(item){ 
-      if(item === id){
-        document.getElementById(item).style.borderBottomColor = "#880e4f";
-      }else{
-        document.getElementById(item).style.borderBottomColor = "#fafafa";
-      }
-    });
+    // const {id} = event.target;
+    // var ids = ["nav-about","nav-projects","nav-contact","nav-home"];
+    // ids.forEach(function(item){ 
+    //   if(item === id){
+    //     document.getElementById(item).style.borderBottomColor = "#880e4f";
+    //   }else{
+    //     document.getElementById(item).style.borderBottomColor = "#fafafa";
+    //   }
+    // });
   }
   responsiveBurgerIcon() {
     var x = document.getElementById("navbarContent");
@@ -77,7 +78,7 @@ class App extends React.Component{
                 <About waitBeforeShow={1500}/>
               </Route>
               <Route path="/contact">
-                {/* <Contact waitBeforeShow={1500}/> */}
+                <Contact waitBeforeShow={1500}/>
               </Route>
             </Switch>
         </Router>
