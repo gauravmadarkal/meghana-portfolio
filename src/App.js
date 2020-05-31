@@ -16,6 +16,8 @@ import {
 } from "react-router-dom";
 import ResponsiveNav from './component/ResponsiveNav';
 import Home from './component/Home';
+import About from './component/About';
+import Projects from './component/Projects';
 
 class App extends React.Component{
   constructor(){
@@ -70,10 +72,10 @@ class App extends React.Component{
                 <Home waitBeforeShow={1500}/>
               </Route>
               <Route path="/projects">
-                {/* <Projects waitBeforeShow={1500}/> */}
+                <Projects waitBeforeShow={1500}/>
               </Route>
               <Route path="/about" >
-                {/* <About waitBeforeShow={1500}/> */}
+                <About waitBeforeShow={1500}/>
               </Route>
               <Route path="/contact">
                 {/* <Contact waitBeforeShow={1500}/> */}

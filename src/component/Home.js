@@ -9,6 +9,7 @@ class Home extends React.Component{
   }
 
   componentDidMount() {
+    document.body.style.backgroundImage = "linear-gradient(#004D40, white)";
       setTimeout(() => {
           this.setState({hidden: false});
       }, this.props.waitBeforeShow);

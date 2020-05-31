@@ -4,10 +4,15 @@
     --main-theme-color : #00695C;
     --main-header-color :#CFD8DC;
 }
+body{
+    background-image: linear-gradient(#004D40, white);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
 .main-header{
     background-color: var(--main-header-color);
     border-radius: 30px;
-    margin: 10px 50px 10px 50px;
+    margin: 10px 30px 10px 30px;
 }
 
 .masthead-brand{
@@ -92,7 +97,7 @@ a.nav-bar-items:hover{
     }
     @media screen and (max-width: 420px) {
         .nav-masthead{
-            padding: 25px 120px 10px 20px;
+            padding: 25px 130px 10px 20px;
         }
     }
     @media screen and (max-width: 375px) {
@@ -102,7 +107,7 @@ a.nav-bar-items:hover{
     }
     @media screen and (max-width: 320px) {
         .nav-masthead{
-            padding: 25px 72px 10px 20px;
+            padding: 25px 80px 10px 20px;
         }
     }
 }

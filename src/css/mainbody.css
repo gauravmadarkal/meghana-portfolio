@@ -7,6 +7,9 @@
     width: 50%;
     vertical-align: middle;
 }
+.robot{
+    float: left;
+}
 h1.cover-heading.greetings{
     margin-top: 90px;
     top: 0;
@@ -69,4 +72,34 @@ a.learnmore-button:hover{
     background-color:var(--main-theme-color);
     border-color: var(--main-theme-color);
 }
+.detailed-description{
+    font-size: 18px;
+    background-color: #ede7f6 !important;
+    border-radius: 20px;
+    padding: 10px 10px 10px 10px !important;
+}
+@media screen and (max-width: 600px) {
+    .detailed-description{
+      padding: 10px 0px 10px 0px;
+      text-align: left;
+      margin: 10px 15px 10px 0px !important;
+    }
+    .aboutme-buttons{
+      margin-left: 10px;
+    }
+    .about-heading{
+      padding-left: 10px;
+    }
+
+}
+.aboutme-buttons{
+    margin-right: 20px;
+    color: var(--main-bg-color) !important;
+  }
+  .aboutme-buttons:hover{
+      background-color:var(--main-theme-color);
+      border-color: var(--main-theme-color);
+      color: var(--main-bg-color) !important;
+}
+
 
