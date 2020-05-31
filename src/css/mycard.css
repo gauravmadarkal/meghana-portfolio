@@ -17,16 +17,16 @@
       padding : 10px 10px 10px 10px;
   }
   .mycard:hover{
-    color: cornflowerblue;
+    color: #009688;
   }
   .card-image{
       width: 100%;
       height: 300px;
-      transition: transform .5s;
+      /* transition: transform .5s; */
   }
-  .card-image:hover{
+  /* .card-image:hover{
     transform: scale(1.04); 
-  }
+  } */
   .card-name{
       padding-top: 10px;
       position: relative;
@@ -42,15 +42,17 @@
     font-family: 'Montserrat', sans-serif;
     color:  #424242;
   }
-
+  .project-details{
+    font-size: 20px;
+    font-family: "Quicksand", sans-serif;
+    text-align: center;
+    margin: 25px 10px auto 10px;
+  }
   @media screen and (max-width: 600px) {
     .card-name{
         font-size: 15px;
         /* height: 180%; */
     } 
-    .card-image{
-        height: 200px;
-    }
     .mycard{
         margin: 10px 10px 20px 10px;
     }
@@ -64,4 +66,52 @@
     .card-title{
      font-size: 25px;
     }
+    .project-details{
+      font-size: 15px;
+    }
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 100%;
+  height: 300px;
+  /* border: 1px solid #f1f1f1; */
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: #009688;
+  color: white;
+  transform: rotateY(180deg);
 }

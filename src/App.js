@@ -57,7 +57,6 @@ class App extends React.Component{
                         <Link style={{ textDecoration: 'none', marginBottom: '20px' }} to="/" ><a class="nav-link active nav-bar-items" id = "nav-home" onClick={this.onClick}>Home</a></Link>
                         <Link style={{ textDecoration: 'none', marginBottom: '20px' }} to="/about"><a class="nav-link nav-bar-items" onClick={this.onClick} id = "nav-about">About</a></Link>
                         <Link style={{ textDecoration: 'none', marginBottom: '20px' }} to="/projects"><a class="nav-link nav-bar-items" onClick={this.onClick} id = "nav-projects">Projects</a></Link>
-                        <Link style={{ textDecoration: 'none', marginBottom: '20px' }} to="/uses"><a class="nav-link nav-bar-items" onClick={this.onClick} id = "nav-uses">Uses</a></Link>
                         <Link style={{ textDecoration: 'none', marginBottom: '20px' }} to="/contact"><a class="nav-link nav-bar-items" onClick={this.onClick} id = "nav-contact">Contact</a></Link>
                         <a class="burger" onClick={this.responsiveBurgerIcon}>
                             <i class="fa fa-align-left fa-2x"></i>
